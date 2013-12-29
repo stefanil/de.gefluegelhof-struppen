@@ -7,6 +7,7 @@ target
 tmp
 .history
 dist
+/.gitignore~
 /.idea
 /*.iml
 /out
@@ -15,3 +16,4 @@ dist
 /.project
 /RUNNING_PID
 /.settings
+/.cache

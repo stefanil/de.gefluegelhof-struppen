@@ -2,10 +2,12 @@ logs
 project/project
 project/target
 .target
+bin
 target
 tmp
 .history
 dist
+/.gitignore~
 /.idea
 /*.iml
 /out
