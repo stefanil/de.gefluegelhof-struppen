@@ -1,13 +1,16 @@
+# FOLDERS
+bin
+#bin/**/*
+#!bin/create_markdown.sh
 logs
 project/project
 project/target
-.target
-bin
 target
+.target
 tmp
 .history
 dist
-/.gitignore~
+# FILES
 /.idea
 /*.iml
 /out
@@ -16,4 +19,6 @@ dist
 /.project
 /RUNNING_PID
 /.settings
+/.gitignore~
 /.cache
+

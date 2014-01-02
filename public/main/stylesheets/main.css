@@ -1,0 +1,162 @@
+/* Header */
+
+div#header {
+	background: white;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+}
+
+div#header-img-container {
+	background: white;
+}
+
+img#header-img {
+	background: white;
+}
+
+/* Navigation Bar */
+
+div#navbar {
+	top: 80px;
+	height: 40px;
+	min-height: 50px;
+	margin-bottom: 0px;
+	background: black url("../images/navbar-bg.png") repeat-x top;
+}
+
+div#navbar-container {
+	background: black url("../images/navbar-bg.png") repeat-x top;
+	border-bottom: solid grey 1px;
+}
+
+a#navbar-brand {
+	margin-right: 20px;
+	
+	font-family: 'Courier New', monospace;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	color: white;
+}
+
+div#navbar-collapse {
+	border: 0;
+}
+
+ul#navbar-collapse-menu.nav.navbar-nav {
+	margin-top: 3px;
+	padding-top: 8px;
+}
+
+li.active.navitem {
+	background-color: rgb(75, 75, 75);
+	margin-top: 2px;
+}
+
+ul.navbar-nav>li.active.navitem>a, ul.navbar-nav>li.active.navitem>a:HOVER {
+	border: 1px solid white;
+	background: white;
+	color: black;
+}
+
+li#me-navitem>a:HOVER {
+	/* TODO: show tooltipps */
+}
+
+li#me-navitem>a:HOVER {
+	/* TODO: show tooltipps */
+}
+
+li#me-navitem>a:HOVER {
+	/* TODO: show tooltipps */
+}
+
+li.navitem {
+	margin: 0px 5px 0px 5px;
+	border: none;
+}
+
+li.navitem>a {
+	border: 1px solid black;
+	background: black url("../images/navitem-bg.png") repeat-x top;
+	padding: 8px 15px 4px 15px;
+	font-weight: normal;
+}
+
+li.navitem>a>img {
+	margin-right: 10px;
+}
+
+div#navbar-downer-shadow, div.navbar-downer-shadow {
+	position: fixed;
+	top: 80px;
+	height: 10px;
+	width: 100%;	
+	background: transparent url("../images/downer-shadow.png") repeat-x top;
+}
+
+div#navbar-downer-shadow {
+	margin: 50px 0 0 0;
+}
+
+div.navbar-downer-shadow {
+	margin: 0;
+}
+
+/* Content */
+
+div#content.container {
+	margin-top: 130px;
+	padding: 10px;
+	background: url("../images/downer-shadow.png") repeat-x top;
+	text-align: left;
+}
+
+/* Footer */
+
+div#footer {
+	position: fixed;absolute;
+	bottom: 0px;
+	
+	width: 100%;
+	height: 50px;
+	padding: 15px 0px;
+	
+	background: black url("../images/navbar-bg.png") repeat-x top;
+}
+
+div#footer>div.container>p {
+	margin: 0px;
+	color: white;
+}
+
+/* Index */
+
+div.item-container {
+	margin-bottom: 10px;
+	background: black url("../images/navbar-bg.png") repeat-x top;
+}
+
+div.col-item-key {
+	padding-right: 0px;
+}
+
+div.col-item-value {
+	padding-left: 0px;
+}
+
+div.item-key, div.item-value {
+	margin: 10px 10px 10px 10px;
+	min-height: 100px;
+	padding: 10px;	
+	background: white;
+}
+
+div.item-meta-values {
+	margin: 10px;
+	margin-bottom: 0px;
+	background: transparent;
+	color: white;
+}
