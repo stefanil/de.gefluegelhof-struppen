@@ -73,14 +73,13 @@
         <!-- footer -->       
         <div id="footer">
         	<div class="container">
-        		<p>© 2014 Stefan Illgen @@ Dresden | Germany</p>
+        		<p><span class="glyphicon glyphicon-star" style="margin-right: 10px;"></span>© 2014 Stefan Illgen<span class="glyphicon glyphicon-star"  style="margin-left: 10px;"></span></p>
         	</div>
         </div>        
-        <!-- header + navigation -->   
-        <div id="header">
-          <div id="header-img-container" class="container">
+        <!-- header + navigation -->  
+        <div id="header"></div> 
+	    <div id="header-img-container" class="container">
 	      	<img id="header-img" src="@routes.Assets.at("main/images/header.png")" />
-	      </div>
 	    </div>
 	    <div id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 	      <div id="navbar-container" class="container">
@@ -91,19 +90,19 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
-	          <a id="navbar-brand" class="navbar-brand" href="#">skills.devel.org</a>
+	          <a id="navbar-brand" class="navbar-brand" href="#">Geflügelhof Struppen</a>
 	        </div>
 	        <div id="navbar-collapse" class="collapse navbar-collapse">
 	          <ul id="navbar-collapse-menu" class="nav navbar-nav">
-	            <li id="me-navitem" class="@if(pageId == 0){active }navitem"><a href="@routes.Application.unternehmen"><img src="@routes.Assets.at("unternehmen/images/unternehmen32.png")" height="25px"/>Unternehmen</a></li>
-	            <li id="projects-navitem" class="@if(pageId == 1){active }navitem"><a href="@routes.Application.angebot"><img src="@routes.Assets.at("angebot/images/angebot32.png")" width="32px"/>Angebot</a></li>
-	            <li id="music-navitem" class="@if(pageId == 2){active }navitem"><a href="@routes.Application.oeffnungszeiten"><img src="@routes.Assets.at("oeffnungszeiten/images/oeffnungszeiten32.png")" width="32px"/>Oeffnungszeiten</a></li>
-	            <li id="music-navitem" class="@if(pageId == 3){active }navitem"><a href="@routes.Application.kontakt"><img src="@routes.Assets.at("kontakt/images/kontakt32.png")" width="32px"/>Kontakt</a></li>
+	            <li class="@if(pageId == 0){active }navitem"><a href="@routes.Application.unternehmen"><span class="glyphicon glyphicon-user"></span>Unternehmen</a></li>
+	            <li class="@if(pageId == 1){active }navitem"><a href="@routes.Application.angebot"><span class="glyphicon glyphicon-shopping-cart"></span>Angebot</a></li>
+	            <li class="@if(pageId == 2){active }navitem"><a href="@routes.Application.oeffnungszeiten"><span class="glyphicon glyphicon-time"></span>Öffnungszeiten</a></li>
+	            <li class="@if(pageId == 3){active }navitem"><a href="@routes.Application.kontakt"><span class="glyphicon glyphicon-envelope"></span>Kontakt</a></li>
 	          </ul>
 	        </div><!--/.nav-collapse -->
 	      </div>
 	    </div>    
-	    <div id="navbar-downer-shadow"></div>       
+	    <div id="navbar-downer-shadow"></div>      
         <!-- Bootstrap core JavaScript 
         	 ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
