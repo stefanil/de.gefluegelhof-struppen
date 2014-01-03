@@ -15,9 +15,24 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.2 r9819"
-   sodipodi:docname="layout00.svg">
+   sodipodi:docname="gui-prototype-00.svg">
   <defs
      id="defs4">
+    <linearGradient
+       id="linearGradient3948">
+      <stop
+         style="stop-color:#000000;stop-opacity:0.19607843;"
+         offset="0"
+         id="stop3950" />
+      <stop
+         id="stop3956"
+         offset="0.5"
+         style="stop-color:#000000;stop-opacity:0;" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0.19607843;"
+         offset="1"
+         id="stop3952" />
+    </linearGradient>
     <linearGradient
        id="linearGradient5078">
       <stop
@@ -859,6 +874,15 @@
        fx="183.83072"
        fy="531.28711"
        r="15.182431" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3948"
+       id="linearGradient3954"
+       x1="-225"
+       y1="-100"
+       x2="-225"
+       y2="-50"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -868,14 +892,14 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="373.59677"
-     inkscape:cy="371.63344"
+     inkscape:cx="56.995134"
+     inkscape:cy="569.90555"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="false"
-     inkscape:window-width="1362"
-     inkscape:window-height="698"
-     inkscape:window-x="1680"
+     showgrid="true"
+     inkscape:window-width="1676"
+     inkscape:window-height="1025"
+     inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      showguides="false"
@@ -1339,5 +1363,16 @@
          d="m 170.71748,544.11647 c 4.72871,8.19035 14.62181,11.3314 20.83521,7.74411 6.21339,-3.58732 8.43971,-13.72551 3.71098,-21.9159 -4.72871,-8.19039 -15.57425,-14.44521 -21.78764,-10.8579 -6.21341,3.58731 -7.48728,16.83928 -2.75855,25.02969 z"
          style="fill:url(#radialGradient5111);fill-opacity:1;stroke:#6c4700;stroke-width:0.2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
     </g>
+    <rect
+       style="fill:url(#linearGradient3954);fill-opacity:1.0;stroke:none"
+       id="rect3178"
+       width="10"
+       height="50"
+       x="-230"
+       y="-100"
+       transform="translate(0,452.36218)"
+       inkscape:export-filename="/home/stefan/DEVEL/projects/huehnerhof/github/de.gefluegelhof-struppen/public/main/images/active-navitem-bg.png"
+       inkscape:export-xdpi="90.000175"
+       inkscape:export-ydpi="90.000175" />
   </g>
 </svg>

@@ -12,20 +12,30 @@ div#header {
 div#header-img-container /*,  */ {
 	background: transparent;
 	z-index: 1040;
-	padding-left: 30px;
+	padding-left: 100px;
 }
 
 img#header-img {
 	position: fixed;
 	top: 12px;
-/* 	height: 100px; */
 	z-index: 1040;
+}
+
+img#header-img-1 {
+	position: fixed;
+	top: 11px;
+	height: 90px;
+	z-index: 1010;
+}
+
+img#logo {
+	height: 30px;
 }
 
 /* Navigation Bar */
 
 div#navbar {
-	top: 100px;
+/* 	top: 100px; */
 	height: 50px;
 	min-height: 50px;
 	margin-bottom: 0px;
@@ -37,14 +47,18 @@ div#navbar-container {
 }
 
 a#navbar-brand {
-	margin-right: 20px;
+	
 	font-family: 'Droid Serif', serif;
-	font-size: 24px;
+	font-size: 18px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: bold;
 	color: white;
-	padding: 10px;
+	
+	margin: 4px 40px 6px 20px;
+	background: url("../images/logo.png") left no-repeat transparent;
+	padding: 5px;
+	padding-left: 60px;
 	line-height: 30px;
 }
 
@@ -64,12 +78,13 @@ li.active.navitem {
 }
 
 ul.navbar-nav>li.active.navitem>a, ul.navbar-nav>li.active.navitem>a:HOVER {
-	border: 0.5px solid white; /*#006400;*/
-	background-color: #003500;
-	background: url("../images/active-navitem-bg.png") top repeat-x;
-	color: white;
 	margin-top: 0px;
 	
+	background-color: #003500;
+	background: url("../images/active-navitem-bg.png") top repeat-x;
+	
+	color: white;
+	font-style: oblique;
 }
 
 ul.navbar-nav>li.active.navitem>a:HOVER {
@@ -86,19 +101,16 @@ li.navitem {
 }
 
 li.navitem>a {
-	border: 0.8px solid white;
-	background-color: #003900;
-	background: url("../images/navitem-bg.png") repeat-x top;
+	background-color: transparent;
 	margin-top: 4px;
 	padding: 10px;
 	color: white;
 	font: normal sans-serif 16px;
-	
 }
 
-/* li.navitem>a>img { */
-/* 	margin-right: 10px; */
-/* } */
+li.navitem>a:HOVER {
+	background: url("../images/navitem-bg.png") repeat-x top;
+}
 
 li.navitem>a>span, ul.navbar-nav>li.active.navitem>a>span {
 	color: white;
@@ -109,7 +121,7 @@ li.navitem>a>span, ul.navbar-nav>li.active.navitem>a>span {
 }
 
 li.navitem>a>span {
-/* 	color: #e1e1e1; */
+
 }
 
 ul.navbar-nav>li.active.navitem>a:HOVER>span {
@@ -118,14 +130,13 @@ ul.navbar-nav>li.active.navitem>a:HOVER>span {
 
 div#navbar-downer-shadow, div.navbar-downer-shadow {
 	position: fixed;
-	top: 80px;
+	top: 50px;
 	height: 10px;
 	width: 100%;	
 	background: transparent url("../images/downer-shadow.png") repeat-x top;
 }
 
 div#navbar-downer-shadow {
-	margin: 70px 0 0 0;
 }
 
 div.navbar-downer-shadow {
@@ -135,9 +146,8 @@ div.navbar-downer-shadow {
 /* Content */
 
 div#content.container {
-	margin-top: 130px;
+	margin-top: 50px;
 	padding: 10px;
-	background: url("../images/downer-shadow.png") repeat-x top;
 	text-align: left;
 }
 
@@ -161,31 +171,4 @@ div#footer>div.container>p {
 	color: white;
 }
 
-/* Index */
 
-div.item-container {
-	margin-bottom: 10px;
-	background: #003900 url("../images/navbar-bg.png") repeat-x top;
-}
-
-div.col-item-key {
-	padding-right: 0px;
-}
-
-div.col-item-value {
-	padding-left: 0px;
-}
-
-div.item-key, div.item-value {
-	margin: 10px 10px 10px 10px;
-	min-height: 100px;
-	padding: 10px;	
-	background: white;
-}
-
-div.item-meta-values {
-	margin: 10px;
-	margin-bottom: 0px;
-	background: transparent;
-	color: white;
-}

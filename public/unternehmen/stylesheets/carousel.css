@@ -1,0 +1,52 @@
+@CHARSET "UTF-8";
+
+/* CUSTOMIZE THE CAROUSEL (see also bootstrap.min.css)
+-------------------------------------------------- */
+.item {
+	color: #666;
+	background: #333;
+	height: 350px;
+	font-size: 52px;
+	text-align: center;
+	font-family: "trebuchet ms", sans-serif;
+}
+
+.carousel {
+	margin-top: 20px;
+	height: 400px;
+	padding: 20px;
+	background: transparent;
+}
+
+.carousel-indicators {
+	bottom: 40px;
+}
+
+.carousel-control {
+	top: 160px;
+	height: 50px; width : 50px;
+	bottom: 40px;
+	width: 50px;
+	font-size: 50px;
+}
+
+.carousel-control.left {
+	left: 8%;
+	right: auto;
+}
+
+.carousel-control.right {
+	right: 8%;
+	left: auto;
+}
+
+.carousel-control>span {
+	color: white;
+	background: transparent;
+}
+
+.carousel-inner>.item>img {
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
