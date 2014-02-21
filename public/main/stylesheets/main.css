@@ -1,3 +1,5 @@
+/* Headings */
+
 h1, h2, h3, h4, h5, h6, h7 {
 	color: #003900;
 	font-family: 'Droid Serif', serif;
@@ -13,6 +15,16 @@ h2 {
 
 h3 {
 	font-size: 1.0em;
+}
+
+/* Tables */
+
+table {
+	table-layout: fixed;
+}
+
+table tr td.col0 {
+	padding-right: 20px;
 }
 
 
@@ -53,7 +65,7 @@ img#logo {
 /* Navigation Bar */
 
 div#navbar {
-	height: 50px;
+	/* height: 50px; */
 	min-height: 50px;
 	margin-bottom: 0px;
 	background: url("../images/navbar-bg.png") repeat-x top #003900;
@@ -72,7 +84,7 @@ a#navbar-brand {
 	font-weight: bold;
 	color: white;
 	
-	margin: 4px 80px 6px 20px;
+	margin: 4px 40px 6px 20px;
 	background: url("../images/logo.png") left no-repeat transparent;
 	padding: 5px;
 	padding-left: 60px;

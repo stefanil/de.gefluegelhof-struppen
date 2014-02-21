@@ -19,20 +19,20 @@ object Application extends Controller {
     Redirect("/unternehmen")
   }
 
-  def angebot = Action {
-    Ok(views.html.angebot.render)
+  def angebot = Action { implicit request =>
+    Ok(views.html.angebot.render(request))
   }
 
-  def oeffnungszeiten = Action {
-    Ok(views.html.oeffnungszeiten.render)
+  def oeffnungszeiten = Action { implicit request =>
+    Ok(views.html.oeffnungszeiten.render(request))
   }
 
-  def kontakt = Action {
-    Ok(views.html.kontakt.render)
+  def kontakt = Action { implicit request =>
+    Ok(views.html.kontakt.render(request))
   }
   
-  def unternehmen = Action {
-    Ok(views.html.unternehmen.render)
+  def unternehmen = Action { implicit request =>
+    Ok(views.html.unternehmen.render(request))
   }
 
 }

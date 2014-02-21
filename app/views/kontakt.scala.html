@@ -1,5 +1,44 @@
-@()
+@(implicit request: play.api.mvc.Request[play.api.mvc.AnyContent])
 
-@main(3, "Kontakt")() {
+@main(3, "Kontakt")(
+	List("oeffnungszeiten/stylesheets/map.css"), 
+	List("https://maps.googleapis.com/maps/api/js?sensor=false", 
+		"oeffnungszeiten/javascripts/map.js")) {
 	
-}
+	<h1>Kontakt</h1>
+	
+	<p>
+		Sie haben Fragen zum Sortiment, einer Bestellung oder Ähnlichem?
+		Besuchen Sie uns oder lassen Sie sich telefonisch beraten.
+	</p>
+	
+	<div class="row">
+	  	<div class="col-lg-8">	  		
+	  		<div id="map-canvas"></div>					
+	  	</div>
+	  	<div class="col-lg-4">
+	  	
+	  		<address>
+				<strong>Geflügelhof Struppen GmbH</strong><br>                                                             
+				OT Ebenheit Nr. 29a<br>
+				01796  Struppen
+			</address>		  	
+			
+			<table>
+				<tr>
+				    <td class="col0"><strong><abbr title="Telefon"><span class="glyphicon glyphicon-phone-alt"></span></abbr></strong></td>
+					<td>(03501) 78 33 58</td>		    
+				</tr>
+				<tr>
+					<td class="col0"><strong><abbr title="Telefax"><span class="glyphicon glyphicon-send"></span></abbr></strong></td>
+				  	<td>(03501) 79 03 98</td>
+				</tr>
+				<tr>
+					<td class="col0"><strong><abbr title="E-Mail"><span class="glyphicon glyphicon-envelope"></span></abbr></strong></td>
+					<td><a href="mailto:#">Antje_Gnauck@@t-online.de</a></td>
+				</tr>
+			</table>
+	  	</div>
+	</div>
+	
+} 
