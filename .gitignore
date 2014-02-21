@@ -2,7 +2,7 @@
 bin
 #bin/**/*
 #!bin/create_markdown.sh
-logs
+#logs
 project/project
 project/target
 target
