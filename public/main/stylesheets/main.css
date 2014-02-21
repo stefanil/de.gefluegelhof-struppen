@@ -67,6 +67,7 @@ img#logo {
 div#navbar {
 	/* height: 50px; */
 	min-height: 50px;
+	min-width: 325px;
 	margin-bottom: 0px;
 	background: url("../images/navbar-bg.png") repeat-x top #003900;
 }
@@ -84,10 +85,10 @@ a#navbar-brand {
 	font-weight: bold;
 	color: white;
 	
-	margin: 4px 40px 6px 20px;
+	margin: 4px 5px 6px 5px;
 	background: url("../images/logo.png") left no-repeat transparent;
 	padding: 5px;
-	padding-left: 60px;
+	padding-left: 50px;
 	line-height: 30px;
 }
 
@@ -125,14 +126,14 @@ ul.navbar-nav>li.active.navitem>a:HOVER {
 }
 
 li.navitem {
-	margin: 0px 5px 0px 5px;
+	margin: 0px 5px 0px 0px;
 	border: none;
 }
 
 li.navitem>a {
 	background-color: transparent;
 	margin-top: 4px;
-	padding: 10px;
+	padding: 10px 5px;
 	color: white;
 	font: normal sans-serif 16px;
 }
@@ -183,7 +184,7 @@ div#content.container {
 /* Footer */
 
 div#footer {
-	position: fixed;absolute;
+	position: fixed;
 	bottom: 0px;
 	
 	width: 100%;

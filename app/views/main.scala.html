@@ -2,6 +2,7 @@
 
 @import controllers.Application._
 @import play.mvc.Http.Request._
+@import play.api.templates._
 @import java.net._
 @import java.io._
 
@@ -97,7 +98,7 @@
 	          
 	        </div>
 	        <div id="navbar-collapse" class="collapse navbar-collapse">
-	          <ul id="navbar-collapse-menu" class="nav navbar-nav">
+	          <ul id="navbar-collapse-menu" class="nav navbar-nav pull-right">
 	            <li class="@if(pageId == 0){active }navitem"><a href="@routes.Application.unternehmen"><span class="glyphicon glyphicon-user"></span>Unser Hof</a></li>
 	            <li class="@if(pageId == 1){active }navitem"><a href="@routes.Application.angebot"><span class="glyphicon glyphicon-shopping-cart"></span>Sortiment</a></li>
 	            <li class="@if(pageId == 2){active }navitem"><a href="@routes.Application.oeffnungszeiten"><span class="glyphicon glyphicon-time"></span>Öffnungszeiten</a></li>

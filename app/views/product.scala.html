@@ -1,0 +1,8 @@
+@(product: models.Product) 
+
+@import models.Product
+
+<dl class="dl-horizontal">
+  <dt><img src="@product.image" alt="@product.description" class="img-thumbnail"></img></dt>
+  <dd>@product.description</dd>
+</dl>

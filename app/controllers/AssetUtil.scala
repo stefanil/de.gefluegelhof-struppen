@@ -11,6 +11,7 @@ import conf.Global
 import play.api.mvc.AnyContent
 import play.api.mvc.Request
 import play.api.mvc.Call
+import play.api.templates.Html
 
 /**
  * @author stefan.illgen
@@ -41,5 +42,7 @@ object AssetUtil {
     }
     false
   }
+  
+  def getLogoImg:String = controllers.routes.Assets.at("main/images/logo32_inverse.png").toString
 
 }

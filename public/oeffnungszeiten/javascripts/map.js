@@ -1,3 +1,6 @@
+/**
+ * @author stefan.illgen
+ */
 var locations = [ 
     [ 	'<a style="vertical-align: top; display: block; background: url(\'../../assets/main/images/logo32_inverse.png\') left no-repeat transparent; padding: 0 0 0 50px;" href="http://localhost:9000/kontakt">'+	  	
 		'<strong>Geflügelhof Struppen GmbH</strong><br/>'+

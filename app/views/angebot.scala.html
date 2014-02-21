@@ -1,27 +1,33 @@
 @()(implicit request:play.api.mvc.Request[play.api.mvc.AnyContent])
 
-@import play.api.templates.Html
+@import play.api.templates._
 @import play.api.mvc._
+@import scala.xml.Elem
+@import controllers.AssetUtil
+@import models.Product._
 
 @main(1, "Sortiment")() {
 	
-	Sortiment
+	<h1>Unser Sortiment</h1>
 	
-braune und weiße Eier aus Bodenhaltung
-Hausmacher  Eier -, Mokka - und Schokolikör
-Hausmacher Frischeinudeln in verschiedenen Ausformungen
-Glutenfreie Nudeln
-Dinkelnudeln
-Frischeibandnudeln in den Geschmacksrichtungen:
-                             Knoblauch, Steinpilz, Ingwer, Tomate.Basilikum, Spinat,
-                             Bärlauch, Chili,  Basilikum und Kartoffelnudeln
-Suppeneinlagen
-Nudeleimer, Puppen, Sträuße
-Dinkelkekse & Waffeln
-Freßsäcke  ( Gefüllt mit Produkten aus unserem Sortiment  )
-Präsentkörbe
-Deko & Geschenkartikel ( Keramik, Kerzen, Servietten u.v.m. )
-Honig vom Imker
-Futtermittel für Hühner, Hund, Katze, Kaninchen, Taube u.v.m.
-	
+	@{
+		val portfolio = Seq[Product](
+			new Product(AssetUtil.getLogoImg, "braune und weiße Eier aus Bodenhaltung"),
+			new Product(AssetUtil.getLogoImg, "Hausmacher  Eier -, Mokka - und Schokolikör"),
+			new Product(AssetUtil.getLogoImg, "Hausmacher Frischeinudeln in verschiedenen Ausformungen"),
+			new Product(AssetUtil.getLogoImg, "Glutenfreie Nudeln"),
+			new Product(AssetUtil.getLogoImg, "Dinkelnudeln"),
+			new Product(AssetUtil.getLogoImg, "Frischeibandnudeln in den Geschmacksrichtungen Knoblauch, Steinpilz, Ingwer," + 
+				"Tomate.Basilikum, Spinat, Bärlauch, Chili,  Basilikum und Kartoffelnudeln"), 
+			new Product(AssetUtil.getLogoImg, "Suppeneinlagen"),
+			new Product(AssetUtil.getLogoImg, "Nudeleimer, Puppen, Sträuße"),
+			new Product(AssetUtil.getLogoImg, "Dinkelkekse & Waffeln"),
+			new Product(AssetUtil.getLogoImg, "Freßsäcke  ( Gefüllt mit Produkten aus unserem Sortiment )"),
+			new Product(AssetUtil.getLogoImg, "Präsentkörbe"),
+			new Product(AssetUtil.getLogoImg, "Deko & Geschenkartikel ( Keramik, Kerzen, Servietten u.v.m. )"),
+			new Product(AssetUtil.getLogoImg, "Honig vom Imker"),
+			new Product(AssetUtil.getLogoImg, "Futtermittel für Hühner, Hund, Katze, Kaninchen, Taube u.v.m.")
+		)		
+		portfolio.map[Html, Seq[Html]](product(_))
+	}	
 }
