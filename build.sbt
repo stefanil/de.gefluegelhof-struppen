@@ -2,7 +2,6 @@ name := "gefluegelhof-struppen"
 
 version := "1.0-SNAPSHOT"
 
-// Comment to get more information during initialization
 logLevel := Level.Warn
 
 play.Project.playScalaSettings
@@ -12,8 +11,6 @@ play.Project.playScalaSettings
 //  anorm,
 //  cache
 //)
-
-
 
 // The Typesafe repository 
 //resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/"
