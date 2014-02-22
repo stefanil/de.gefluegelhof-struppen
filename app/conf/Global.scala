@@ -9,11 +9,11 @@ import com.typesafe.config.ConfigFactory
  */
 object Global extends GlobalSettings {
   
-  var mode = Mode.Dev
+  var mode = Mode.Prod
   
   override def onLoadConfig(config: Configuration, path: File, classloader: ClassLoader, mode: Mode.Mode): Configuration = {
     this.mode = mode
-    val modeSpecificConfig = config ++ Configuration(ConfigFactory.load("application.${mode.toString.toLowerCase}.conf"))
+    val modeSpecificConfig = config ++ Configuration(ConfigFactory.load("application."+mode.toString.toLowerCase+".conf"))
     super.onLoadConfig(modeSpecificConfig, path, classloader, mode)
   }
   
