@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/gefluegelhof-struppen -mem 512 -J-server -Dhttp.port=80
+web: target/universal/stage/bin/gefluegelhof-struppen -Dhttp.port=${PORT} ${JAVA_OPTS}
