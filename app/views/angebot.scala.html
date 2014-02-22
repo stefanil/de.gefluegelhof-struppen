@@ -1,4 +1,4 @@
-@()(implicit request:play.api.mvc.Request[play.api.mvc.AnyContent])
+@(portfolio:Seq[ProductLine])(implicit request:play.api.mvc.Request[play.api.mvc.AnyContent])
 
 @import play.api.templates._
 @import play.api.mvc._
@@ -8,26 +8,20 @@
 
 @main(1, "Sortiment")() {
 	
-	<h1>Unser Sortiment</h1>
+	<div class="row">
+	  	<div class="h1-glyphicon col-lg-2 visible-lg">
+	  		<h1><span class="glyphicon glyphicon-shopping-cart img-thumbnail  pull-right"></span></h1>
+	  	</div>
+	  	<div class="col-lg-8">
 	
-	@{
-		val portfolio = Seq[Product](
-			new Product(AssetUtil.getLogoImg, "braune und weiße Eier aus Bodenhaltung"),
-			new Product(AssetUtil.getLogoImg, "Hausmacher  Eier -, Mokka - und Schokolikör"),
-			new Product(AssetUtil.getLogoImg, "Hausmacher Frischeinudeln in verschiedenen Ausformungen"),
-			new Product(AssetUtil.getLogoImg, "Glutenfreie Nudeln"),
-			new Product(AssetUtil.getLogoImg, "Dinkelnudeln"),
-			new Product(AssetUtil.getLogoImg, "Frischeibandnudeln in den Geschmacksrichtungen Knoblauch, Steinpilz, Ingwer," + 
-				"Tomate.Basilikum, Spinat, Bärlauch, Chili,  Basilikum und Kartoffelnudeln"), 
-			new Product(AssetUtil.getLogoImg, "Suppeneinlagen"),
-			new Product(AssetUtil.getLogoImg, "Nudeleimer, Puppen, Sträuße"),
-			new Product(AssetUtil.getLogoImg, "Dinkelkekse & Waffeln"),
-			new Product(AssetUtil.getLogoImg, "Freßsäcke  ( Gefüllt mit Produkten aus unserem Sortiment )"),
-			new Product(AssetUtil.getLogoImg, "Präsentkörbe"),
-			new Product(AssetUtil.getLogoImg, "Deko & Geschenkartikel ( Keramik, Kerzen, Servietten u.v.m. )"),
-			new Product(AssetUtil.getLogoImg, "Honig vom Imker"),
-			new Product(AssetUtil.getLogoImg, "Futtermittel für Hühner, Hund, Katze, Kaninchen, Taube u.v.m.")
-		)		
-		portfolio.map[Html, Seq[Html]](product(_))
-	}	
+			<h1>Unser Sortiment</h1>
+			
+			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua...</p>
+			
+			@portfolio.map[Html, Seq[Html]](productLine(_))
+	
+		</div>
+	  	<div class="col-lg-2"></div>
+	</div>
+	
 }

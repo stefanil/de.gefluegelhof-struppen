@@ -1,14 +1,9 @@
 package controllers
 
-import java.io.File
 import play.api._
 import play.api.mvc._
 import play.api.templates.Html
-import java.net.URI
-import java.net.URL
-import java.io.FileReader
-import java.util.ArrayList
-import scala.collection.mutable.MutableList 
+import models.Portfolio
 
 /**
  * @author stefan.illgen
@@ -20,7 +15,7 @@ object Application extends Controller {
   }
 
   def angebot = Action { implicit request =>
-    Ok(views.html.angebot.render(request))
+    Ok(views.html.angebot.render(Portfolio.apply, request))
   }
 
   def oeffnungszeiten = Action { implicit request =>

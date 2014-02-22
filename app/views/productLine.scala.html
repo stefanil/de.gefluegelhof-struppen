@@ -1,0 +1,9 @@
+@(product: models.ProductLine) 
+
+@import models.Product
+
+<h2>@product.getName</h2>
+
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua...</p>
+
+@product.getProducts.map[Html, Seq[Html]](views.html.product(_))

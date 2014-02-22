@@ -9,6 +9,16 @@ h1 {
 	font-size: 1.5em;
 }
 
+div.h1-glyphicon {
+	padding-right: 0;
+}
+
+h1>span.glyphicon {
+	font-size: 1.5em;	
+/* 	margin-right: 15px; */
+	padding-right: 35px;
+}
+
 h2 {
 	font-size: 1.2em;
 }
@@ -67,7 +77,7 @@ img#logo {
 div#navbar {
 	/* height: 50px; */
 	min-height: 50px;
-	min-width: 325px;
+	min-width: 350px;
 	margin-bottom: 0px;
 	background: url("../images/navbar-bg.png") repeat-x top #003900;
 }
@@ -85,7 +95,7 @@ a#navbar-brand {
 	font-weight: bold;
 	color: white;
 	
-	margin: 4px 5px 6px 5px;
+	margin: 4px 5px 0px 0px;
 	background: url("../images/logo.png") left no-repeat transparent;
 	padding: 5px;
 	padding-left: 50px;
@@ -98,12 +108,14 @@ div#navbar-collapse {
 
 ul#navbar-collapse-menu.nav.navbar-nav {
 	margin-top: 0px;
-	padding-top: 0px;
+	padding-top: 1px;
+	vertical-align: bottom;
 }
 
 li.active.navitem {
 	background-color: #003500;
 	margin-top: 0px;
+	margin-bottom: 0px;
 	padding: 4px;
 }
 
@@ -126,16 +138,18 @@ ul.navbar-nav>li.active.navitem>a:HOVER {
 }
 
 li.navitem {
-	margin: 0px 5px 0px 0px;
+	margin: 0 10px 0 10px;
 	border: none;
 }
 
 li.navitem>a {
 	background-color: transparent;
 	margin-top: 4px;
-	padding: 10px 5px;
+	height: 40px;
+	padding: 8px 10px;
 	color: white;
 	font: normal sans-serif 16px;
+	text-align: left;
 }
 
 li.navitem>a:HOVER {
@@ -144,14 +158,20 @@ li.navitem>a:HOVER {
 
 li.navitem>a>span, ul.navbar-nav>li.active.navitem>a>span {
 	color: white;
-	font-size: 20px;
-	font-weight: bold;
-	vertical-align: top;
-	margin-right: 10px;
+	font-size: 11pt;
+	vertical-align: middle;
+	margin: 0 15px;
 }
 
-li.navitem>a>span {
+li.navitem>a>span.glyphicon, ul.navbar-nav>li.active.navitem>a>span.glyphicon {
+	padding-top: 2px;
+	font-size: 17pt;
+	font-weight: bold;
+}
 
+li.navitem>a>span.nav-text  {
+	padding: 3px 5px;
+	vertical-align: middle;
 }
 
 ul.navbar-nav>li.active.navitem>a:HOVER>span {

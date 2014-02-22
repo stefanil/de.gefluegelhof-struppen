@@ -43,25 +43,14 @@
        	@for(p2s:String<-customJS) {
        			<script src="@controllers.AssetUtil.at(p2s, request)" type="text/javascript"></script>
        	}
-       	
-       	
-       	
+	
     </head>   
-    
-    
-    
-    
+
     <body>
         <!-- content -->       
 		
 		<div id="content" class="container">
-			<div class="row">
-			  	<div class="col-lg-2"></div>
-			  	<div class="col-lg-8">
-           			@content
-           		</div>
-			  	<div class="col-lg-2"></div>
-			</div>
+			@content
         </div> 
         
         @*           
@@ -81,32 +70,45 @@
 	      	@** <img id="header-img-1" src="@routes.Assets.at("main/images/header1.png")" /> *@
 	    </div>
 	    -->
-	    <div id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	    <div id="navbar" class="navbar navbar-inverse navbar-fixed-top " role="navigation">
 	      <div id="navbar-container" class="container">
-	        <div class="navbar-header">
-	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	            <span class="sr-only">Toggle navigation</span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	          </button>
-	          
-	          <a id="navbar-brand" class="navbar-brand" href="#">
-		          @**<img id="logo" src="@routes.Assets.at("main/images/logo.png")"></img>*@
-		          <span>Geflügelhof Struppen</span>
-	          </a>
-	          
+	      	
+	      	<div class="row">
+			  	<div class="col-lg-2"></div>
+			  	
+			  	<div class="col-lg-8">
+			        <div class="navbar-header">
+			          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			          </button>
+			          
+			          <a id="navbar-brand" class="navbar-brand" href="#">
+				          <span>Geflügelhof Struppen</span>
+			          </a>
+			          
+			        </div>
+	
+			        <div id="navbar-collapse" class="collapse navbar-collapse">
+			          <ul id="navbar-collapse-menu" class="nav navbar-nav">
+			            <li class="@if(pageId == 0){active }navitem clearfix"><a href="@routes.Application.unternehmen" title="Unser Hof"><span class="glyphicon glyphicon-user pull-left"></span><span class="nav-text visible-xs pull-left">Unser Hof</span></a></li>
+			            <li class="@if(pageId == 1){active }navitem clearfix"><a href="@routes.Application.angebot" title="Sortiment"><span class="glyphicon glyphicon-shopping-cart pull-left"></span><span class="nav-text visible-xs pull-left">Sortiment</span></a></li>
+			            <li class="@if(pageId == 2){active }navitem clearfix"><a href="@routes.Application.oeffnungszeiten" title="Öffnungszeiten"><span class="glyphicon glyphicon-time pull-left"></span><span class="nav-text visible-xs pull-left">Öffnungszeiten</span></a></li>
+			            <li class="@if(pageId == 3){active }navitem clearfix"><a href="@routes.Application.kontakt" title="Kontakt"><span class="glyphicon glyphicon-envelope pull-left"></span><span class="nav-text visible-xs pull-left">Kontakt</span></a></li>
+			          </ul>
+			        </div><!--/.nav-collapse -->
+	        
+	        	</div>
+	        
+	        	<div class="col-lg-2"></div>
+	        
 	        </div>
-	        <div id="navbar-collapse" class="collapse navbar-collapse">
-	          <ul id="navbar-collapse-menu" class="nav navbar-nav pull-right">
-	            <li class="@if(pageId == 0){active }navitem"><a href="@routes.Application.unternehmen"><span class="glyphicon glyphicon-user"></span>Unser Hof</a></li>
-	            <li class="@if(pageId == 1){active }navitem"><a href="@routes.Application.angebot"><span class="glyphicon glyphicon-shopping-cart"></span>Sortiment</a></li>
-	            <li class="@if(pageId == 2){active }navitem"><a href="@routes.Application.oeffnungszeiten"><span class="glyphicon glyphicon-time"></span>Öffnungszeiten</a></li>
-	            <li class="@if(pageId == 3){active }navitem"><a href="@routes.Application.kontakt"><span class="glyphicon glyphicon-envelope"></span>Kontakt</a></li>
-	          </ul>
-	        </div><!--/.nav-collapse -->
+	        
 	      </div>
-	    </div>    
+	    </div>
+	       
 	    <div id="navbar-downer-shadow"></div>      
 
     </body>
