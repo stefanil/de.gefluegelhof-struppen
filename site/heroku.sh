@@ -13,5 +13,11 @@ watch heroku ps
 heroku restart
 # open the heroku application
 heroku open
+# run an attached dyno (f.e. bash command)
+heroku run [command]
+# Run the application on the remote
+heroku run ./target/universal/stage/bin/gefluegelhof-struppen
 # Show currently used PaaS Stack
 heroku stack
+# Show all Env Vars on Heroku
+heroku run printenv
