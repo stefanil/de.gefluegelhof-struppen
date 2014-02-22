@@ -1,1 +1,1 @@
-web: "target/universal/stage/bin/gefluegelhof-struppen" ${JAVA_OPTS} -Dhttp.port=${PORT}
+web: "target/universal/stage/bin/gefluegelhof-struppen" -mem 512 -Dhttp.port=${PORT}
