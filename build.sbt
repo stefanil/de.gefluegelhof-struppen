@@ -1,18 +1,18 @@
 
 name := "gefluegelhof-struppen"
+
 version := "1.0-SNAPSHOT"
+
+play.Project.playScalaSettings
 
 logLevel := Level.Warn
 
-play.Project.playScalaSettings()
+// superfluous stuff ..
 
-// superfluous ..
-/*
-libraryDependencies ++= Seq(
-  jdbc,
-  anorm,
-  cache
-)
+//libraryDependencies ++= Seq(
+//  jdbc,
+//  anorm,
+//  cache
+//)
  
-resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/"
-*/
+//resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/"
