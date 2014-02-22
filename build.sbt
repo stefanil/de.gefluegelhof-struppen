@@ -1,4 +1,5 @@
 name := "gefluegelhof-struppen"
+
 version := "1.0-SNAPSHOT"
 
 // Comment to get more information during initialization
